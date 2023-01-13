@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Random User</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+    <div id="app" class="flex flex-col justify-center text-center items-center h-screen w-96 m-auto">
+        <img class="rounded-full border-4 mb-2"
+        :class="gender=='male' ? 'border-sky-600': gender=='female' ? 'border-pink-400' : 'border-gray-800'"
+        :src="profile" alt="firstName +' ' + lastName">
+        <h3 class="text-2xl font-medium mb-2">{{firstName +' '+ lastName}}</h3>
+        <p class="mb-3 text-xl">Email: {{email}}</p>
+        <button @click="getRandomUser()"
+        v-bind:class="gender=='male'? 'bg-sky-700':gender=='female'? 'bg-pink-400':''"
+        class="bg-gray-800 text-white px-4 py-2 rounded-sm cursor-pointer hover:scale-95">Get Random User</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
