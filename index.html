@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Random User</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        #app{
+            margin: auto;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+        }
+        .btn{
+            border: none;
+            cursor: pointer;
+            padding: .75rem 1.2rem;
+            font-size: 1rem;
+            display: inline-block;
+            background: #333;
+            color: white;
+        }
+        .btn:hover{
+            transform: scale(0.98);
+        }
+        .female{
+            background-color: pink;
+            color: #333;
+            border-color: pink;
+        }
+        .male{
+            background-color:#3b5998;
+            color: #f4f4f4;
+            border-color: #3b5998;
+        }
+        img{
+            border-radius: 50%;
+            border: 5px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="no-photo">
+        <h3 class="m-heading">Email: sam@gmail.com</h3>
+        <button class="btn">Get Random User</button>
+    </div>
+</body>
+</html>
